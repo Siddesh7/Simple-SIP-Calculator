@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='https://cdn.plot.ly/plotly-2.8.3.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="lf-con">
+            <div class="inputs">
+                <label for="range">Monthly Investment</label><br>
+                <div class="flx">
+                    <input type="range" name="range"min="100" max="100000" value="600" id="monthlyslider">     
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">₹</span>
+                        <input type="number" id="monthlyinput" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>     
+                </div><br>
+
+                <label for="apy">Expected Returns per annum</label><br>
+                <div class="flx">
+                    <input type="range" name="apy"min="1" max="50" value="12" id="interestslider">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">%</span>
+                        <input type="number" id="interestinput" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>  
+                </div><br>
+
+                <label for="duration">Duration of investment</label><br>
+                <div class="flx">
+                    <input type="range" name="duration"min="1" max="40" value="10" id="timeslider">
+                    <div class="input-group input-group-sm mb-3">
+     
+                        <input type="number" id="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>  
+                </div>                
+            </div>
+            <div class="outputs">
+                <div id="item"></div>
+                <div id="rt"></div>
+                <div id="ite"></div>
+                
+            </div>
+        </div>        
+        <div class="rg-con">
+            <div id="pie"></div>
+        </div>
+    </main>
+    <div id='myDiv'></div>  
+    <script src="/index.js"></script>
+
+</body>
+</html>

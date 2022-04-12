@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(26, 24, 24);
+  color: aliceblue;
+}
+input[type="number"] {
+  text-align: right;
+}
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.lf-con {
+  margin: 9% auto 0 20%;
+}
+.flx {
+  display: flex;
+  justify-content: space-between;
+}
+.lf-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 680px) {
+  main {
+    display: block;
+  }
+  .outputs {
+    padding-top: 40px;
+  }
+  .lf-con {
+    width: 70vw;
+    padding-top: 30px;
+    margin: auto;
+  }
+  .rg-com {
+    width: 90%;
+    margin: auto;
+  }
+}
